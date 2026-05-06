@@ -1,0 +1,179 @@
+:root {
+    --cor-de-fundo: #e1e4ee;
+    --branco-principal: #f7f7f7;
+    --botao-azul: #00e0ff;
+    --cinza-secundario: #9aa6b2;
+    --botao-azul-efeito: #f6f9fa;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: "Inter";
+}
+
+/* TOPO */
+.principal {
+    background: url('../img/bluelock-bg.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+/* BOTÕES */
+.container__botao {
+    background: linear-gradient(90deg, #00e0ff, #0066ff);
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container__botao:hover {
+    background: linear-gradient(90deg, #0088aa, #0033aa);
+}
+
+/* TÍTULOS */
+.descricao__titulo {
+    font-size: 2.5rem;
+    color: #00e0ff;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        display: block;
+        justify-content: center;
+        height: auto;
+    }
+
+    .container__caixa {
+        margin: 2rem;
+    }
+
+    .secundario {
+        margin: 2rem;
+    }
+
+    .secundario_imagem {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container__descricao {
+        padding: 1rem;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container__imagem {
+        width: 70%;
+    }
+
+    .secundario_imagem {
+        width: 90%;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .dispositivos__titulo {
+        font-size: 1.8rem;
+    }
+
+    .lista__item {
+        font-size: 1.2rem;
+    }
+
+    .container__botao {
+        width: 90%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .rodape {
+        margin: 2rem 1rem;
+    }
+
+    .rodape__texto {
+        font-size: 0.7rem;
+    }
+}
+
+.img_icone{
+    width: 20%;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .container__titulo {
+        font-size: 1.5rem;
+    }
+
+    .descricao__titulo {
+        font-size: 1.6rem;
+    }
+
+    .container__botao {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+
+
+
+
+
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .container__imagem,
+    .secundario_imagem {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dispositivos__lista {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 0;
+        list-style: none;
+    }
+
+
+    .rodape {
+        text-align: center;
+        padding: 20px;
+    }
+
+}
